@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="my_text">My application</string>
+    <string name="hello_world">Hello world</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string-array name="spinner_entries">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>China</item>
+    </string-array>
+</resources>

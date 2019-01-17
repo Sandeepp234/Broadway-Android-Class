@@ -1,14 +1,21 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <string name="my_text">My application</string>
+   <string name="message">Hi how are you?</string>
     <string name="hello_world">Hello world</string>
     <string name="name">Name</string>
     <string name="name_hint">Enter your name</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
-    <string-array name="spinner_entries">
+    <string name="setting">Setting</string>
+    <string name="rate_us">Rate Us</string>
+
+    <string-array name="array_country">
+
         <item>Nepal</item>
         <item>India</item>
         <item>China</item>
+        <item>USA</item>
+
     </string-array>
 </resources>

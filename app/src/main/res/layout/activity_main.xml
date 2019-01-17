@@ -4,26 +4,62 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:id="@+id/et_input"
-        android:hint="Enter Your message"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your name"
+            android:padding="8dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spn_country"
+            android:entries="@array/array_country"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/rg_gender"
+            android:layout_height="wrap_content">
+            
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:id="@+id/rb_male"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Female"
+                android:id="@+id/rb_female"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+        
+    </LinearLayout>
+
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login" />
-
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/register" />
+        android:layout_gravity="center"
+        android:text="Submit" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:id="@+id/tv_display"
-        android:layout_height="wrap_content" />
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="8dp" />
 </LinearLayout>
